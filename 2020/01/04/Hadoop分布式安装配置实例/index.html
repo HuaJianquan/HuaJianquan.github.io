@@ -16,7 +16,7 @@
 <meta property="og:description" content="Hadoop完全分布式安装配置示例 材料准备 &amp;gt; Ubuntu kylin 64位虚拟机&amp;gt; Sun jdk 压缩包&amp;gt; Hadoop 压缩包 开始安装 &amp;gt; jdk安装&amp;gt; Hadoop安装 配置详情 &amp;gt; core-site.xml 文件配置&amp;gt; hdfs-site.xml 文件配置&amp;gt; mapred-site.xml 文件配置&amp;gt; yarn-site.x">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2020&#x2F;01&#x2F;04&#x2F;Hadoop%E5%88%86%E5%B8%83%E5%BC%8F%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E5%AE%9E%E4%BE%8B&#x2F;img&#x2F;a.png">
-<meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2020&#x2F;01&#x2F;04&#x2F;Hadoop%E5%88%86%E5%B8%83%E5%BC%8F%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E5%AE%9E%E4%BE%8B&#x2F;img&#x2F;b.png">
+<meta property="og:image" content="http:&#x2F;&#x2F;qb8magusb.bkt.clouddn.com&#x2F;a.png?e=1591002799&amp;token=_5LWte0vGt0zljPs_ZpcCX0S6TSzvFZPoTRaCwMe:P2RapkHtypKS9eqgvbs-2jRVEaY=">
 <meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2020&#x2F;01&#x2F;04&#x2F;Hadoop%E5%88%86%E5%B8%83%E5%BC%8F%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E5%AE%9E%E4%BE%8B&#x2F;img&#x2F;c.png">
 <meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2020&#x2F;01&#x2F;04&#x2F;Hadoop%E5%88%86%E5%B8%83%E5%BC%8F%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E5%AE%9E%E4%BE%8B&#x2F;img&#x2F;d.png">
 <meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2020&#x2F;01&#x2F;04&#x2F;Hadoop%E5%88%86%E5%B8%83%E5%BC%8F%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E5%AE%9E%E4%BE%8B&#x2F;img&#x2F;h.png">
@@ -48,7 +48,7 @@
 <meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2020&#x2F;01&#x2F;04&#x2F;Hadoop%E5%88%86%E5%B8%83%E5%BC%8F%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E5%AE%9E%E4%BE%8B&#x2F;img&#x2F;d2.png">
 <meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2020&#x2F;01&#x2F;04&#x2F;Hadoop%E5%88%86%E5%B8%83%E5%BC%8F%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E5%AE%9E%E4%BE%8B&#x2F;img&#x2F;d3.png">
 <meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2020&#x2F;01&#x2F;04&#x2F;Hadoop%E5%88%86%E5%B8%83%E5%BC%8F%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E5%AE%9E%E4%BE%8B&#x2F;img&#x2F;d4.png">
-<meta property="og:updated_time" content="2020-01-09T04:41:17.450Z">
+<meta property="og:updated_time" content="2020-06-01T08:14:25.478Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2020&#x2F;01&#x2F;04&#x2F;Hadoop%E5%88%86%E5%B8%83%E5%BC%8F%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E5%AE%9E%E4%BE%8B&#x2F;img&#x2F;a.png">
   
@@ -237,7 +237,7 @@
 <p>切换到 <em>/usr/local/src/</em> 目录下查看结果</p>
 <p><code>cd /usr/local/src</code>    </p>
 <p><code>ls</code>  </p>
-<p><img src="img/b.png" alt="图片"></p>
+<p><img src="http://qb8magusb.bkt.clouddn.com/a.png?e=1591002799&token=_5LWte0vGt0zljPs_ZpcCX0S6TSzvFZPoTRaCwMe:P2RapkHtypKS9eqgvbs-2jRVEaY=" alt="图片"></p>
 <p>然后设置环境变量，编辑家目录下的 <em>.bashrc</em> 文件</p>
 <p><code>sudo  vi  ~/.bashrc</code></p>
 <p>将下面这行代码写入文件开头    </p>
@@ -483,16 +483,6 @@
 </article>
 
   
-<nav id="article-nav">
-  
-  
-    <a href="/2019/11/18/%E5%A4%A7%E6%95%B0%E6%8D%AE%E5%AD%A6%E4%B9%A0%E4%B9%8B%E8%B7%AF/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">大数据学习之路</div>
-      <i class="icon-circle-right"></i>
-    </a>
-  
-</nav>
-
 
 <aside class="wrap-side-operation">
     <div class="mod-side-operation">
