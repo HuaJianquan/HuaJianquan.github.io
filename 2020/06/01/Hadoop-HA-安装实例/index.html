@@ -6,14 +6,41 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives | Coding A&#39;s blog</title>
+  <title>Hadoop HA 安装实例 | Coding A&#39;s blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Coding A&#39;s blog">
-<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;archives&#x2F;index.html">
+  <meta property="og:type" content="article">
+<meta property="og:title" content="Hadoop HA 安装实例">
+<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2020&#x2F;06&#x2F;01&#x2F;Hadoop-HA-%E5%AE%89%E8%A3%85%E5%AE%9E%E4%BE%8B&#x2F;index.html">
 <meta property="og:site_name" content="Coding A&#39;s blog">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="http:&#x2F;&#x2F;qb8zj3de1.bkt.clouddn.com&#x2F;%E5%85%8B%E9%9A%861.png">
+<meta property="og:image" content="http:&#x2F;&#x2F;qb8zj3de1.bkt.clouddn.com&#x2F;%E5%85%8B%E9%9A%862.png">
+<meta property="og:image" content="http:&#x2F;&#x2F;qb8zj3de1.bkt.clouddn.com&#x2F;%E5%85%8B%E9%9A%863.png">
+<meta property="og:image" content="http:&#x2F;&#x2F;qb8zj3de1.bkt.clouddn.com&#x2F;%E5%85%8B%E9%9A%864.png">
+<meta property="og:image" content="http:&#x2F;&#x2F;qb8zj3de1.bkt.clouddn.com&#x2F;%E5%85%8B%E9%9A%865.png">
+<meta property="og:image" content="http:&#x2F;&#x2F;qb8zj3de1.bkt.clouddn.com&#x2F;%E7%BD%91%E5%8D%A11.png">
+<meta property="og:image" content="http:&#x2F;&#x2F;qb8zj3de1.bkt.clouddn.com&#x2F;20200603134612.png">
+<meta property="og:image" content="http:&#x2F;&#x2F;qb8zj3de1.bkt.clouddn.com&#x2F;%E7%BD%91%E5%8D%A13.png">
+<meta property="og:image" content="http:&#x2F;&#x2F;qb8zj3de1.bkt.clouddn.com&#x2F;%E7%BD%91%E5%8D%A15.png">
+<meta property="og:image" content="http:&#x2F;&#x2F;qb8zj3de1.bkt.clouddn.com&#x2F;20200603135327.png">
+<meta property="og:image" content="http:&#x2F;&#x2F;qb8zj3de1.bkt.clouddn.com&#x2F;20200603135426.png">
+<meta property="og:image" content="http:&#x2F;&#x2F;qb8zj3de1.bkt.clouddn.com&#x2F;20200603135553.png">
+<meta property="og:image" content="http:&#x2F;&#x2F;qb8zj3de1.bkt.clouddn.com&#x2F;20200603211446.png">
+<meta property="og:image" content="http:&#x2F;&#x2F;qb8zj3de1.bkt.clouddn.com&#x2F;20200603211906.png">
+<meta property="og:image" content="http:&#x2F;&#x2F;qb8zj3de1.bkt.clouddn.com&#x2F;20200603212732.png">
+<meta property="og:image" content="http:&#x2F;&#x2F;qb8zj3de1.bkt.clouddn.com&#x2F;20200603213528.png">
+<meta property="og:image" content="http:&#x2F;&#x2F;qb8zj3de1.bkt.clouddn.com&#x2F;20200603215756.png">
+<meta property="og:image" content="http:&#x2F;&#x2F;qb8zj3de1.bkt.clouddn.com&#x2F;20200603220109.png">
+<meta property="og:image" content="http:&#x2F;&#x2F;qb8zj3de1.bkt.clouddn.com&#x2F;20200603231620.png">
+<meta property="og:image" content="http:&#x2F;&#x2F;qb8zj3de1.bkt.clouddn.com&#x2F;20200603232209.png">
+<meta property="og:image" content="http:&#x2F;&#x2F;qb8zj3de1.bkt.clouddn.com&#x2F;20200603233142.png">
+<meta property="og:image" content="http:&#x2F;&#x2F;qb8zj3de1.bkt.clouddn.com&#x2F;20200603233156.png">
+<meta property="og:image" content="http:&#x2F;&#x2F;qb8zj3de1.bkt.clouddn.com&#x2F;20200603233213.png">
+<meta property="og:image" content="http:&#x2F;&#x2F;qb8zj3de1.bkt.clouddn.com&#x2F;20200603234020.png">
+<meta property="og:image" content="http:&#x2F;&#x2F;qb8zj3de1.bkt.clouddn.com&#x2F;20200603234027.png">
+<meta property="og:updated_time" content="2020-06-03T15:41:08.468Z">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http:&#x2F;&#x2F;qb8zj3de1.bkt.clouddn.com&#x2F;%E5%85%8B%E9%9A%861.png">
   
     <link rel="alternative" href="/atom.xml" title="Coding A&#39;s blog" type="application/atom+xml">
   
@@ -147,76 +174,202 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
+            <article id="post-Hadoop-HA-安装实例" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
   
+    <h1 class="article-title" itemprop="name">
+      Hadoop HA 安装实例
+    </h1>
   
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2020" class="archive-year">2020</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/06/01/Hadoop-HA-%E5%AE%89%E8%A3%85%E5%AE%9E%E4%BE%8B/" class="archive-article-date">
+
+		<!--显示阅读次数-->
+		
+		<br/>
+		<a class="cloud-tie-join-count" href="javascript:void(0);" target="_blank" rel="noopener" style="color:gray;font-size:14px;">
+		<span class="icon-sort"></span>
+		<span id="busuanzi_container_page_pv" style="color:#ef7522;font-size:14px;">
+            阅读数: <span id="busuanzi_value_page_pv"></span>次 &nbsp;&nbsp;
+		</span>
+		</a>
+		
+        
+        <a href="/2020/06/01/Hadoop-HA-%E5%AE%89%E8%A3%85%E5%AE%9E%E4%BE%8B/" class="archive-article-date">
   	<time datetime="2020-06-01T11:54:16.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-06-01</time>
 </a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/06/01/Hadoop-HA-%E5%AE%89%E8%A3%85%E5%AE%9E%E4%BE%8B/">Hadoop HA 安装实例</a>
-    </h1>
-  
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <hr>
+<a id="more"></a>
+<h2 id="一、安装环境"><a href="#一、安装环境" class="headerlink" title="一、安装环境"></a>一、安装环境</h2><h2 id="安装环境要求："><a href="#安装环境要求：" class="headerlink" title="安装环境要求：  "></a>安装环境要求：  </h2><p>虚拟机 ： VMware Workstation Pro<br>系统版本 ： Linux CentOS 7.4  </p>
+<h3 id="1-安装环境准备"><a href="#1-安装环境准备" class="headerlink" title="1.安装环境准备"></a>1.安装环境准备</h3><p>（1）虚拟机安装（略，请移步到《CentOS7.4安装实例》查看）。<br>（2）本次安装需要三个节点，因此需要准备三台虚拟机，且要保证节点之间能够进行互相通信，需要在节点之间实现ssh免密登陆。</p>
+<p>将安装好的虚拟机克隆出另外两台<br>点击“虚拟机”选项，选择“管理”选项卡下的“克隆”，点击克隆虚拟机<br><img src="http://qb8zj3de1.bkt.clouddn.com/%E5%85%8B%E9%9A%861.png" alt="图片"><br>出现弹窗后，点击“下一步”<br><img src="http://qb8zj3de1.bkt.clouddn.com/%E5%85%8B%E9%9A%862.png" alt="图片"><br>选中“虚拟机中的当前状态”，点击“下一步”<br><img src="http://qb8zj3de1.bkt.clouddn.com/%E5%85%8B%E9%9A%863.png" alt="图片"><br>选中“创建完整克隆”，点击“下一步”<br><img src="http://qb8zj3de1.bkt.clouddn.com/%E5%85%8B%E9%9A%864.png" alt="图片"><br>修改虚拟机名称，修改存放地址，点击“完成”<br><img src="http://qb8zj3de1.bkt.clouddn.com/%E5%85%8B%E9%9A%865.png" alt="图片"><br>克隆成功后重复操作，再克隆另外一台虚拟机。<br>（3）修改克隆机网卡、主机名、映射文件。<br>修改hjq02克隆机网卡  </p>
+<p>输入在shell终端输入“ip addr”查看当前网卡<br><img src="http://qb8zj3de1.bkt.clouddn.com/%E7%BD%91%E5%8D%A11.png" alt="图片"><br>在root用户下输入“vim /etc/sysconfig/network-scripts/ifcfg-ens32”编辑网卡文件<br><img src="http://qb8zj3de1.bkt.clouddn.com/20200603134612.png" alt="图片"><br>将UUID删除，将IPADDR更改，后保存退出。</p>
+<p>输入“service network restart”重启网卡。查看更改是否生效。   </p>
+<p><img src="http://qb8zj3de1.bkt.clouddn.com/%E7%BD%91%E5%8D%A13.png" alt="图片"><br>ip地址已经变为192.168.175.52，更改已经生效。</p>
+<p>ping 本地回环，ping 网关，ping 外网均成功，说明网卡更改无问题。<br><img src="http://qb8zj3de1.bkt.clouddn.com/%E7%BD%91%E5%8D%A15.png" alt="图片"><br>修改hostname<br>输入“hostname”查看当前主机名<br><img src="http://qb8zj3de1.bkt.clouddn.com/20200603135327.png" alt="图片"><br>输入“vim /etc/hostname”，编辑主机名，将原先主机名删掉后写入现在主机名（可自由设置），这里主机名改为“hjq02”。<br><img src="http://qb8zj3de1.bkt.clouddn.com/20200603135426.png" alt="图片"><br>保存退出后，重启虚拟机查看主机名是否更改成功<br><img src="http://qb8zj3de1.bkt.clouddn.com/20200603135553.png" alt="图片"><br>主机名已经更改成功，之后对另一台克隆机重复上述操作进行修改。   </p>
+<p>（4）在配置过程中需要从主节点将文件分发到从节点，为了避免不必要的麻烦，需要实现从主节点ssh免密登录到从节点。</p>
+<p>修改hosts文件，将三台主机名和对应ip地址填写到hosts文件,终端输入“vim /et/hosts”编辑hosts文件<br><img src="http://qb8zj3de1.bkt.clouddn.com/20200603211446.png" alt="图片">    </p>
+<p>测试用主机名ping另外两台虚拟机，看是否ping通，ping通说明无误。<br><img src="http://qb8zj3de1.bkt.clouddn.com/20200603211906.png" alt="图片"></p>
+<p>将修改好的host文件传到另外两台虚拟机中<br>输入“scp -r /etc/hosts 主机名:/etc/”命令，在出现的问题中输入“yes”，后输入密码即可<br><img src="http://qb8zj3de1.bkt.clouddn.com/20200603212732.png" alt="图片"></p>
+<p>输入“rpm -qa | grep ssh”命令查看是否已经安装ssh服务，出现下面结果则表示已经安装过，不出现任何提示则证明还未安装，需要先安装ssh服务。<br><img src="http://qb8zj3de1.bkt.clouddn.com/20200603213528.png" alt="图片">   </p>
+<p>在设置ssh免密登录之前，首先得明确是让哪一个用户拥有免密登录的权限，确定之后则切换到该用户之下再进行操作。<br>切换到hjq用户下，在当前用户家目录之下先输入“ssh localhost”命令,在出现的问题中输入“yes”<br><img src="http://qb8zj3de1.bkt.clouddn.com/20200603215756.png" alt="图片"><br>输入“cd ~/.ssh”命令打开.ssh文件夹，输入“ls”命令后发现现在该文件夹下有一个文件<br><img src="http://qb8zj3de1.bkt.clouddn.com/20200603220109.png" alt="图片"><br>在.ssh目录下输入命令“ssh-keygen -t rsa”生成秘钥，之后一路按回车键<br><img src="http://qb8zj3de1.bkt.clouddn.com/20200603231620.png" alt="图片"><br>输入“ls”命令可以看到现在.ssh目录下多了两个文件，id_rsa是私钥文件，而id_rsa.pub就是我们需要的公钥文件。<br><img src="http://qb8zj3de1.bkt.clouddn.com/20200603232209.png" alt="图片"><br>接下来将公钥添加到认证文件中，加入方式有多种，这里选择使用“ssh-copy-id”命令来完成，先输入命“ssh-copy-id  hjq01”,之后再输入“ssh-copy-id  hjq02”和 “ssh-copy-id  hjq03”，在出现的问题中输入“yes”，然后每一次都输入各个主机密码。<br><img src="http://qb8zj3de1.bkt.clouddn.com/20200603233142.png" alt="图片"><br><img src="http://qb8zj3de1.bkt.clouddn.com/20200603233156.png" alt="图片"><br><img src="http://qb8zj3de1.bkt.clouddn.com/20200603233213.png" alt="图片"><br>下面测试免密登录是否设置成功，在输入命令“ssh hjq02”和“ssh hjq03”查看是否成功登录。<br><img src="http://qb8zj3de1.bkt.clouddn.com/20200603234020.png" alt="图片"><br><img src="http://qb8zj3de1.bkt.clouddn.com/20200603234027.png" alt="图片"></p>
 
-        <div class="article-info info-on-right">
-          
-          
-
+      
+      
+        <div class="page-reward">
+          <a href="javascript:;" target="_blank" rel="noopener" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/assets/alipay.jpg">
+                      <span class="reward-type">支付宝</span>
+                    </div>
+                    
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/assets/wechatpay.png">
+                      <span class="reward-type">微信</span>
+                    </div>
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" target="_blank" rel="noopener" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" target="_blank" rel="noopener" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" target="_blank" rel="noopener" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" target="_blank" rel="noopener" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" target="_blank" rel="noopener" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" target="_blank" rel="noopener" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" target="_blank" rel="noopener" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" target="_blank" rel="noopener" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" target="_blank" rel="noopener" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;" target="_blank" rel="noopener"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2020/06/01/Hadoop-HA-%E5%AE%89%E8%A3%85%E5%AE%9E%E4%BE%8B/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/01/04/Hadoop%E5%88%86%E5%B8%83%E5%BC%8F%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E5%AE%9E%E4%BE%8B/" class="archive-article-date">
-  	<time datetime="2020-01-04T14:45:12.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-01-04</time>
-</a>
+<nav id="article-nav">
+  
+  
+    <a href="/2020/01/04/Hadoop%E5%88%86%E5%B8%83%E5%BC%8F%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E5%AE%9E%E4%BE%8B/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Hadoop分布式安装配置实例</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" target="_blank" rel="noopener" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/01/04/Hadoop%E5%88%86%E5%B8%83%E5%BC%8F%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E5%AE%9E%E4%BE%8B/">Hadoop分布式安装配置实例</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
+        
+        
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#一、安装环境"><span class="toc-number">1.</span> <span class="toc-text">一、安装环境</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#安装环境要求："><span class="toc-number">2.</span> <span class="toc-text">安装环境要求：  </span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-安装环境准备"><span class="toc-number">2.1.</span> <span class="toc-text">1.安装环境准备</span></a></li></ol></li></ol>
+                    </div>
+                </span>
+            </div>
         </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
+        
+    </div>
+</aside>
+
+
+
   
   
-    </div></section>
   
 
-    
+  
+
+  
+
+  
 
 
           </div>
@@ -241,8 +394,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
