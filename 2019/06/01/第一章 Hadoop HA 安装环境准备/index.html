@@ -63,7 +63,7 @@
 <meta property="og:image" content="https:&#x2F;&#x2F;raw.githubusercontent.com&#x2F;HuaJianquan&#x2F;HadoopImg&#x2F;master&#x2F;20200703223127.png">
 <meta property="og:image" content="https:&#x2F;&#x2F;raw.githubusercontent.com&#x2F;HuaJianquan&#x2F;HadoopImg&#x2F;master&#x2F;20200703223155.png">
 <meta property="og:image" content="https:&#x2F;&#x2F;raw.githubusercontent.com&#x2F;HuaJianquan&#x2F;HadoopImg&#x2F;master&#x2F;20200703223358.png">
-<meta property="og:updated_time" content="2020-07-03T15:39:42.244Z">
+<meta property="og:updated_time" content="2020-07-03T16:05:29.907Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https:&#x2F;&#x2F;raw.githubusercontent.com&#x2F;HuaJianquan&#x2F;HadoopImg&#x2F;master&#x2F;20200703172932.png">
   
@@ -231,46 +231,46 @@
       
         <hr>
 <a id="more"></a>
-<h3 id="一、虚拟机准备"><a href="#一、虚拟机准备" class="headerlink" title="一、虚拟机准备"></a>一、虚拟机准备</h3><h4 id="1、虚拟机安装（略，请移步到《CentOS7-4安装实例》查看）。"><a href="#1、虚拟机安装（略，请移步到《CentOS7-4安装实例》查看）。" class="headerlink" title="1、虚拟机安装（略，请移步到《CentOS7.4安装实例》查看）。"></a>1、虚拟机安装（略，请移步到《CentOS7.4安装实例》查看）。</h4><h4 id="2、本次安装需要三个节点，因此需要准备三台虚拟机，且要保证节点之间能够进行互相通信，需要在节点之间实现ssh免密登陆。"><a href="#2、本次安装需要三个节点，因此需要准备三台虚拟机，且要保证节点之间能够进行互相通信，需要在节点之间实现ssh免密登陆。" class="headerlink" title="2、本次安装需要三个节点，因此需要准备三台虚拟机，且要保证节点之间能够进行互相通信，需要在节点之间实现ssh免密登陆。"></a>2、本次安装需要三个节点，因此需要准备三台虚拟机，且要保证节点之间能够进行互相通信，需要在节点之间实现ssh免密登陆。</h4><p>（1）点击“虚拟机”选项，选择“管理”选项卡下的“克隆”，点击克隆虚拟机<br><img src="https://raw.githubusercontent.com/HuaJianquan/HadoopImg/master/20200703172932.png" alt="">     </p>
-<p>（2）出现弹窗后，点击“下一步”<br><img src="https://raw.githubusercontent.com/HuaJianquan/HadoopImg/master/20200703173127.png" alt="">       </p>
-<p>（3）选中“虚拟机中的当前状态”，点击“下一步”<br><img src="https://raw.githubusercontent.com/HuaJianquan/HadoopImg/master/20200703173218.png" alt="">        </p>
+<h3 id="一、虚拟机准备"><a href="#一、虚拟机准备" class="headerlink" title="一、虚拟机准备"></a>一、虚拟机准备</h3><h4 id="1、虚拟机安装（略，请移步到《CentOS7-4安装实例》查看）。"><a href="#1、虚拟机安装（略，请移步到《CentOS7-4安装实例》查看）。" class="headerlink" title="1、虚拟机安装（略，请移步到《CentOS7.4安装实例》查看）。"></a>1、虚拟机安装（略，请移步到《CentOS7.4安装实例》查看）。</h4><h4 id="2、本次安装需要三个节点，因此需要准备三台虚拟机，且要保证节点之间能够进行互相通信，需要在节点之间实现ssh免密登陆。"><a href="#2、本次安装需要三个节点，因此需要准备三台虚拟机，且要保证节点之间能够进行互相通信，需要在节点之间实现ssh免密登陆。" class="headerlink" title="2、本次安装需要三个节点，因此需要准备三台虚拟机，且要保证节点之间能够进行互相通信，需要在节点之间实现ssh免密登陆。"></a>2、本次安装需要三个节点，因此需要准备三台虚拟机，且要保证节点之间能够进行互相通信，需要在节点之间实现ssh免密登陆。</h4><p>（1）点击“虚拟机”选项，选择“管理”选项卡下的“克隆”，点击克隆虚拟机<br><img src="https://raw.githubusercontent.com/HuaJianquan/HadoopImg/master/20200703172932.png" alt="image">     </p>
+<p>（2）出现弹窗后，点击“下一步”<br><img src="https://raw.githubusercontent.com/HuaJianquan/HadoopImg/master/20200703173127.png" alt="image">       </p>
+<p>（3）选中“虚拟机中的当前状态”，点击“下一步”<br><img src="https://raw.githubusercontent.com/HuaJianquan/HadoopImg/master/20200703173218.png" alt="image">        </p>
 <p>（4）选中“创建完整克隆”，点击“下一步”<br><img src="https://raw.githubusercontent.com/HuaJianquan/HadoopImg/master/20200703173535.png" alt="">        </p>
-<p>（5）修改虚拟机名称，修改存放地址，点击“完成”<br><img src="https://raw.githubusercontent.com/HuaJianquan/HadoopImg/master/20200703173604.png" alt="">         </p>
+<p>（5）修改虚拟机名称，修改存放地址，点击“完成”<br><img src="https://raw.githubusercontent.com/HuaJianquan/HadoopImg/master/20200703173604.png" alt="image">         </p>
 <p>（6）克隆成功后重复操作，再克隆另外一台虚拟机。   </p>
-<h3 id="二、网卡设置"><a href="#二、网卡设置" class="headerlink" title="二、网卡设置"></a>二、网卡设置</h3><h4 id="1、修改网卡"><a href="#1、修改网卡" class="headerlink" title="1、修改网卡"></a>1、修改网卡</h4><p>（1）输入在shell终端输入“ip addr”查看当前网卡<br><img src="https://raw.githubusercontent.com/HuaJianquan/HadoopImg/master/20200703174332.png" alt="">      </p>
-<p>（2）在root用户下输入“vim /etc/sysconfig/network-scripts/ifcfg-ens32”编辑网卡文件<br><img src="https://raw.githubusercontent.com/HuaJianquan/HadoopImg/master/20200703174751.png" alt=""><br>将UUID删除，将IPADDR更改，后保存退出。    </p>
-<p>（3）输入“service network restart”重启网卡。查看更改是否生效。<br><img src="https://raw.githubusercontent.com/HuaJianquan/HadoopImg/master/20200703180843.png" alt=""><br>ip地址已经变为192.168.175.52，更改已经生效。      </p>
-<p>（4）ping 本地回环，ping 网关，ping 外网均成功，说明网卡更改无问题。<br><img src="https://raw.githubusercontent.com/HuaJianquan/HadoopImg/master/20200703181147.png" alt="">    </p>
-<h3 id="三、SSH免密登录"><a href="#三、SSH免密登录" class="headerlink" title="三、SSH免密登录"></a>三、SSH免密登录</h3><h4 id="1、修改hostname，每个节点的主机名都不能相同。"><a href="#1、修改hostname，每个节点的主机名都不能相同。" class="headerlink" title="1、修改hostname，每个节点的主机名都不能相同。"></a>1、修改hostname，每个节点的主机名都不能相同。</h4><p>（1）输入“hostname”查看当前主机名<br><img src="https://raw.githubusercontent.com/HuaJianquan/HadoopImg/master/20200703181448.png" alt="">     </p>
-<p>（2）输入“vim /etc/hostname”，编辑主机名，将原先主机名删掉后写入现在主机名（可自由设置），这里主机名改为“hjq02”。<br><img src="https://raw.githubusercontent.com/HuaJianquan/HadoopImg/master/20200703182049.png" alt=""><br>保存退出。 </p>
-<p>（3）重启虚拟机，查看主机名是否更改成功<br><img src="https://raw.githubusercontent.com/HuaJianquan/HadoopImg/master/20200703182433.png" alt="">        </p>
+<h3 id="二、网卡设置"><a href="#二、网卡设置" class="headerlink" title="二、网卡设置"></a>二、网卡设置</h3><h4 id="1、修改网卡"><a href="#1、修改网卡" class="headerlink" title="1、修改网卡"></a>1、修改网卡</h4><p>（1）输入在shell终端输入“ip addr”查看当前网卡<br><img src="https://raw.githubusercontent.com/HuaJianquan/HadoopImg/master/20200703174332.png" alt="image">      </p>
+<p>（2）在root用户下输入“vim /etc/sysconfig/network-scripts/ifcfg-ens32”编辑网卡文件<br><img src="https://raw.githubusercontent.com/HuaJianquan/HadoopImg/master/20200703174751.png" alt="image"><br>将UUID删除，将IPADDR更改，后保存退出。    </p>
+<p>（3）输入“service network restart”重启网卡。查看更改是否生效。<br><img src="https://raw.githubusercontent.com/HuaJianquan/HadoopImg/master/20200703180843.png" alt="image"><br>ip地址已经变为192.168.175.52，更改已经生效。      </p>
+<p>（4）ping 本地回环，ping 网关，ping 外网均成功，说明网卡更改无问题。<br><img src="https://raw.githubusercontent.com/HuaJianquan/HadoopImg/master/20200703181147.png" alt="image">    </p>
+<h3 id="三、SSH免密登录"><a href="#三、SSH免密登录" class="headerlink" title="三、SSH免密登录"></a>三、SSH免密登录</h3><h4 id="1、修改hostname，每个节点的主机名都不能相同。"><a href="#1、修改hostname，每个节点的主机名都不能相同。" class="headerlink" title="1、修改hostname，每个节点的主机名都不能相同。"></a>1、修改hostname，每个节点的主机名都不能相同。</h4><p>（1）输入“hostname”查看当前主机名<br><img src="https://raw.githubusercontent.com/HuaJianquan/HadoopImg/master/20200703181448.png" alt="image">     </p>
+<p>（2）输入“vim /etc/hostname”，编辑主机名，将原先主机名删掉后写入现在主机名（可自由设置），这里主机名改为“hjq02”。<br><img src="https://raw.githubusercontent.com/HuaJianquan/HadoopImg/master/20200703182049.png" alt="image"><br>保存退出。 </p>
+<p>（3）重启虚拟机，查看主机名是否更改成功<br><img src="https://raw.githubusercontent.com/HuaJianquan/HadoopImg/master/20200703182433.png" alt="image">        </p>
 <p>主机名已经更改成功，之后对另一台克隆机重复上述操作进行修改。   </p>
-<h4 id="2、修改hosts映射文件"><a href="#2、修改hosts映射文件" class="headerlink" title="2、修改hosts映射文件"></a>2、修改hosts映射文件</h4><p>（1）修改hosts文件，将三台主机名和对应ip地址填写到hosts文件,终端输入“vim /et/hosts”编辑hosts文件<br><img src="https://raw.githubusercontent.com/HuaJianquan/HadoopImg/master/20200703183501.png" alt="">     </p>
-<p>（2）测试用主机名ping另外两台虚拟机，看是否ping通，ping通说明无误。<br><img src="https://raw.githubusercontent.com/HuaJianquan/HadoopImg/master/20200703184029.png" alt="">    </p>
-<p>（3）将修改好的host文件传到另外两台虚拟机中<br>输入“scp -r /etc/hosts 主机名:/etc/”命令，在出现的问题中输入“yes”，后输入密码即可<br><img src="https://raw.githubusercontent.com/HuaJianquan/HadoopImg/master/20200703193906.png" alt="">    </p>
-<h4 id="3、生成密钥，实现免密登录"><a href="#3、生成密钥，实现免密登录" class="headerlink" title="3、生成密钥，实现免密登录"></a>3、生成密钥，实现免密登录</h4><p>（1）输入“rpm -qa | grep ssh”命令查看是否已经安装ssh服务，出现下面结果则表示已经安装过，不出现任何提示则证明还未安装，需要先安装ssh服务。<br><img src="https://raw.githubusercontent.com/HuaJianquan/HadoopImg/master/20200703193944.png" alt="">     </p>
+<h4 id="2、修改hosts映射文件"><a href="#2、修改hosts映射文件" class="headerlink" title="2、修改hosts映射文件"></a>2、修改hosts映射文件</h4><p>（1）修改hosts文件，将三台主机名和对应ip地址填写到hosts文件,终端输入“vim /et/hosts”编辑hosts文件<br><img src="https://raw.githubusercontent.com/HuaJianquan/HadoopImg/master/20200703183501.png" alt="image">     </p>
+<p>（2）测试用主机名ping另外两台虚拟机，看是否ping通，ping通说明无误。<br><img src="https://raw.githubusercontent.com/HuaJianquan/HadoopImg/master/20200703184029.png" alt="image">    </p>
+<p>（3）将修改好的host文件传到另外两台虚拟机中<br>输入“scp -r /etc/hosts 主机名:/etc/”命令，在出现的问题中输入“yes”，后输入密码即可<br><img src="https://raw.githubusercontent.com/HuaJianquan/HadoopImg/master/20200703193906.png" alt="image">    </p>
+<h4 id="3、生成密钥，实现免密登录"><a href="#3、生成密钥，实现免密登录" class="headerlink" title="3、生成密钥，实现免密登录"></a>3、生成密钥，实现免密登录</h4><p>（1）输入“rpm -qa | grep ssh”命令查看是否已经安装ssh服务，出现下面结果则表示已经安装过，不出现任何提示则证明还未安装，需要先安装ssh服务。<br><img src="https://raw.githubusercontent.com/HuaJianquan/HadoopImg/master/20200703193944.png" alt="image">     </p>
 <p>在设置ssh免密登录之前，首先得明确是让哪一个用户拥有免密登录的权限，确定之后则切换到该用户之下再进行操作。     </p>
-<p>（2）切换到hjq用户下，在当前用户家目录之下先输入“ssh localhost”命令,在出现的问题中输入“yes”<br><img src="https://raw.githubusercontent.com/HuaJianquan/HadoopImg/master/20200703194216.png" alt="">     </p>
-<p>（3）输入“cd ~/.ssh”命令打开.ssh文件夹，输入“ls”命令后发现现在该文件夹下有一个文件<br><img src="https://raw.githubusercontent.com/HuaJianquan/HadoopImg/master/20200703194313.png" alt="">      </p>
-<p>（4）在.ssh目录下输入命令“ssh-keygen -t rsa”生成秘钥，之后一路按回车键<br><img src="https://raw.githubusercontent.com/HuaJianquan/HadoopImg/master/20200703194517.png" alt="">     </p>
-<p>（5）输入“ls”命令可以看到现在.ssh目录下多了两个文件，id_rsa是私钥文件，而id_rsa.pub就是我们需要的公钥文件。<br><img src="https://raw.githubusercontent.com/HuaJianquan/HadoopImg/master/20200703194555.png" alt="">     </p>
-<p>（6）接下来将公钥添加到认证文件中，加入方式有多种，这里选择使用“ssh-copy-id”命令来完成，先输入命“ssh-copy-id  hjq01”,之后再输入“ssh-copy-id  hjq02”和 “ssh-copy-id  hjq03”，在出现的问题中输入“yes”，然后每一次都输入各个主机密码。<br><img src="https://raw.githubusercontent.com/HuaJianquan/HadoopImg/master/20200703194653.png" alt="">     </p>
-<p><img src="https://raw.githubusercontent.com/HuaJianquan/HadoopImg/master/20200703194729.png" alt="">     </p>
-<p><img src="https://raw.githubusercontent.com/HuaJianquan/HadoopImg/master/20200703194801.png" alt="">     </p>
-<p>（7）下面测试免密登录是否设置成功，在hjq01节点输入命令“ssh hjq02”和“ssh hjq03”查看是否成功登录。<br><img src="https://raw.githubusercontent.com/HuaJianquan/HadoopImg/master/20200703194917.png" alt="">      </p>
-<p><img src="https://raw.githubusercontent.com/HuaJianquan/HadoopImg/master/20200703194958.png" alt=""><br>至此已成功实现从hjq01免密登录hjq02和hjq03。    </p>
+<p>（2）切换到hjq用户下，在当前用户家目录之下先输入“ssh localhost”命令,在出现的问题中输入“yes”<br><img src="https://raw.githubusercontent.com/HuaJianquan/HadoopImg/master/20200703194216.png" alt="image">     </p>
+<p>（3）输入“cd ~/.ssh”命令打开.ssh文件夹，输入“ls”命令后发现现在该文件夹下有一个文件<br><img src="https://raw.githubusercontent.com/HuaJianquan/HadoopImg/master/20200703194313.png" alt="image">      </p>
+<p>（4）在.ssh目录下输入命令“ssh-keygen -t rsa”生成秘钥，之后一路按回车键<br><img src="https://raw.githubusercontent.com/HuaJianquan/HadoopImg/master/20200703194517.png" alt="image">     </p>
+<p>（5）输入“ls”命令可以看到现在.ssh目录下多了两个文件，id_rsa是私钥文件，而id_rsa.pub就是我们需要的公钥文件。<br><img src="https://raw.githubusercontent.com/HuaJianquan/HadoopImg/master/20200703194555.png" alt="image">     </p>
+<p>（6）接下来将公钥添加到认证文件中，加入方式有多种，这里选择使用“ssh-copy-id”命令来完成，先输入命“ssh-copy-id  hjq01”,之后再输入“ssh-copy-id  hjq02”和 “ssh-copy-id  hjq03”，在出现的问题中输入“yes”，然后每一次都输入各个主机密码。<br><img src="https://raw.githubusercontent.com/HuaJianquan/HadoopImg/master/20200703194653.png" alt="image">     </p>
+<p><img src="https://raw.githubusercontent.com/HuaJianquan/HadoopImg/master/20200703194729.png" alt="image">     </p>
+<p><img src="https://raw.githubusercontent.com/HuaJianquan/HadoopImg/master/20200703194801.png" alt="image">     </p>
+<p>（7）下面测试免密登录是否设置成功，在hjq01节点输入命令“ssh hjq02”和“ssh hjq03”查看是否成功登录。<br><img src="https://raw.githubusercontent.com/HuaJianquan/HadoopImg/master/20200703194917.png" alt="image">      </p>
+<p><img src="https://raw.githubusercontent.com/HuaJianquan/HadoopImg/master/20200703194958.png" alt="image"><br>至此已成功实现从hjq01免密登录hjq02和hjq03。    </p>
 <h3 id="四、NTP时钟同步"><a href="#四、NTP时钟同步" class="headerlink" title="四、NTP时钟同步"></a>四、NTP时钟同步</h3><p>hadoop集群对于各个节点的时间同步要求比较高，要求各节点之间的时间相差范围不能太多。否则会造成很多问题，所以时间同步非常必要。</p>
-<h4 id="1、搭建时钟同步服务器"><a href="#1、搭建时钟同步服务器" class="headerlink" title="1、搭建时钟同步服务器"></a>1、搭建时钟同步服务器</h4><p>（1）在所有节点输入“rpm -qa | grep ntp”查看是否已经安装过ntp服务，如未安装，则要先进行安装，安装命令“sudo yum -y install ntp”<br>结果显示如下则证明已经安装。<br><img src="https://raw.githubusercontent.com/HuaJianquan/HadoopImg/master/20200703203425.png" alt="">    </p>
-<p>（2）输入“date”命令查看是否在正确的时区，我们在中国，所以时区要设置为CST。<br><img src="https://raw.githubusercontent.com/HuaJianquan/HadoopImg/master/20200703203459.png" alt=""><br>以上步骤所以机器都要操作。   </p>
-<p>（3）在作为ntp服务器的节点输入“sudo vim /etc/ntp.conf”修改配置文件<br>找到下面这一行，把注释去掉，将ip地址改为自己主机所在的网段或者改为现在主机的ip地址。<br><img src="https://raw.githubusercontent.com/HuaJianquan/HadoopImg/master/20200703203802.png" alt=""><br>找到下面这4行把它们注释掉<br><img src="https://raw.githubusercontent.com/HuaJianquan/HadoopImg/master/20200703203742.png" alt=""><br>在下面添加这两行<br>server 127.127.1.0<br>fudge 127.127.1.0 stratum 10<br><img src="https://raw.githubusercontent.com/HuaJianquan/HadoopImg/master/20200703204657.png" alt=""><br>保存退出。     </p>
-<p>（4）输入命令“sudo systemctl start ntpd.service”启动服务<br><img src="https://raw.githubusercontent.com/HuaJianquan/HadoopImg/master/20200703205009.png" alt=""><br>（5）输入命令“sudo systemctl status ntpd.service”查看状态，active(running)说明启动成功。<br><img src="https://raw.githubusercontent.com/HuaJianquan/HadoopImg/master/20200703205058.png" alt="">      </p>
-<p>（6）输入命令“sudo systemctl enable ntpd.service”设置ntp服务开机自启动<br><img src="https://raw.githubusercontent.com/HuaJianquan/HadoopImg/master/20200703205244.png" alt=""><br>同样在其它节点也要操作上面这三个步骤。</p>
-<p>（7）接下来在非时钟服务器的节点设置时间同步，在其它节点输入“crontab -e”命令编辑文件<br><img src="https://raw.githubusercontent.com/HuaJianquan/HadoopImg/master/20200703205725.png" alt=""><br>输入“0-59/10 * * * * /usr/sbin/ntpdate hjq01”到文件中，保存退出<br><img src="https://raw.githubusercontent.com/HuaJianquan/HadoopImg/master/20200703205806.png" alt="">      </p>
+<h4 id="1、搭建时钟同步服务器"><a href="#1、搭建时钟同步服务器" class="headerlink" title="1、搭建时钟同步服务器"></a>1、搭建时钟同步服务器</h4><p>（1）在所有节点输入“rpm -qa | grep ntp”查看是否已经安装过ntp服务，如未安装，则要先进行安装，安装命令“sudo yum -y install ntp”<br>结果显示如下则证明已经安装。<br><img src="https://raw.githubusercontent.com/HuaJianquan/HadoopImg/master/20200703203425.png" alt="image">    </p>
+<p>（2）输入“date”命令查看是否在正确的时区，我们在中国，所以时区要设置为CST。<br><img src="https://raw.githubusercontent.com/HuaJianquan/HadoopImg/master/20200703203459.png" alt="image"><br>以上步骤所以机器都要操作。   </p>
+<p>（3）在作为ntp服务器的节点输入“sudo vim /etc/ntp.conf”修改配置文件<br>找到下面这一行，把注释去掉，将ip地址改为自己主机所在的网段或者改为现在主机的ip地址。<br><img src="https://raw.githubusercontent.com/HuaJianquan/HadoopImg/master/20200703203802.png" alt="image"><br>找到下面这4行把它们注释掉<br><img src="https://raw.githubusercontent.com/HuaJianquan/HadoopImg/master/20200703203742.png" alt="image"><br>在下面添加这两行<br>server 127.127.1.0<br>fudge 127.127.1.0 stratum 10<br><img src="https://raw.githubusercontent.com/HuaJianquan/HadoopImg/master/20200703204657.png" alt="image"><br>保存退出。     </p>
+<p>（4）输入命令“sudo systemctl start ntpd.service”启动服务<br><img src="https://raw.githubusercontent.com/HuaJianquan/HadoopImg/master/20200703205009.png" alt="image"><br>（5）输入命令“sudo systemctl status ntpd.service”查看状态，active(running)说明启动成功。<br><img src="https://raw.githubusercontent.com/HuaJianquan/HadoopImg/master/20200703205058.png" alt="image">      </p>
+<p>（6）输入命令“sudo systemctl enable ntpd.service”设置ntp服务开机自启动<br><img src="https://raw.githubusercontent.com/HuaJianquan/HadoopImg/master/20200703205244.png" alt="image"><br>同样在其它节点也要操作上面这三个步骤。</p>
+<p>（7）接下来在非时钟服务器的节点设置时间同步，在其它节点输入“crontab -e”命令编辑文件<br><img src="https://raw.githubusercontent.com/HuaJianquan/HadoopImg/master/20200703205725.png" alt="image"><br>输入“0-59/10 * * * * /usr/sbin/ntpdate hjq01”到文件中，保存退出<br><img src="https://raw.githubusercontent.com/HuaJianquan/HadoopImg/master/20200703205806.png" alt="image">      </p>
 <p>（8）时钟同步还有一个重要的条件，就是虚拟机不能跟物理机的时间相差太大，所以先同步作为时钟服务器的虚拟机与物理主机i机时间相同。</p>
 <h3 id="五、编写脚本，实现高效运维"><a href="#五、编写脚本，实现高效运维" class="headerlink" title="五、编写脚本，实现高效运维"></a>五、编写脚本，实现高效运维</h3><p>在大规模集群  中，为了提高运维效率和可靠性，编写执行脚本进行运维必不可少。因此我们需要编写脚本进行一些shell命令的封装，以此来提高工作效率和可靠性。</p>
-<h4 id="1、集群文件规划"><a href="#1、集群文件规划" class="headerlink" title="1、集群文件规划"></a>1、集群文件规划</h4><p>有结构的文件规划才能保证系统的稳定性，作为专业且的运维人员，文件规划逻辑简洁、清晰明了是非常良好品质。<br><img src="https://raw.githubusercontent.com/HuaJianquan/HadoopImg/master/20200703211520.png" alt=""><br>myhadoop文件夹存放集群所有相关文件，子文件夹tools存到执行脚本工具文件，子文件夹app是集群所有组件安装位置，子文件夹data存放集群的日志数据等。   </p>
-<p>（1）在当前用户家目录下输入命令“mkdir -p  myhadoop/tools”创建文件目录<br><img src="https://raw.githubusercontent.com/HuaJianquan/HadoopImg/master/20200703211917.png" alt=""><br>（2）将tools目录添加到~/.bashrc文件<br><img src="https://raw.githubusercontent.com/HuaJianquan/HadoopImg/master/20200703220627.png" alt=""><br>保存退出，使用“source  ~/.bashrc”命令使更改生效。 </p>
-<h4 id="2、编写集群角色规划文件"><a href="#2、编写集群角色规划文件" class="headerlink" title="2、编写集群角色规划文件"></a>2、编写集群角色规划文件</h4><p>（1）集群分发需要进行角色规划，因此需要编写配置文件为每一个节点配置角色，切换到 myhadoop/tools目录下输入“vim deploy.conf ”编写deploy.conf文件，编写后保存退出。<br><img src="https://raw.githubusercontent.com/HuaJianquan/HadoopImg/master/20200703212656.png" alt=""><br>第一个逗号前面的字符串为节点hostname,通过识别hostname将文件分发到对应的节点，第二个逗号前面字符串为节点角色，m代表主节点，s代表从节点，第三个逗号前面字符串表示是否全部分发到所有节点，当脚本匹配到all时将文件分发到所有节点。   </p>
+<h4 id="1、集群文件规划"><a href="#1、集群文件规划" class="headerlink" title="1、集群文件规划"></a>1、集群文件规划</h4><p>有结构的文件规划才能保证系统的稳定性，作为专业且的运维人员，文件规划逻辑简洁、清晰明了是非常良好品质。<br><img src="https://raw.githubusercontent.com/HuaJianquan/HadoopImg/master/20200703211520.png" alt="image"><br>myhadoop文件夹存放集群所有相关文件，子文件夹tools存到执行脚本工具文件，子文件夹app是集群所有组件安装位置，子文件夹data存放集群的日志数据等。   </p>
+<p>（1）在当前用户家目录下输入命令“mkdir -p  myhadoop/tools”创建文件目录<br><img src="https://raw.githubusercontent.com/HuaJianquan/HadoopImg/master/20200703211917.png" alt="image"><br>（2）将tools目录添加到~/.bashrc文件<br><img src="https://raw.githubusercontent.com/HuaJianquan/HadoopImg/master/20200703220627.png" alt="image"><br>保存退出，使用“source  ~/.bashrc”命令使更改生效。 </p>
+<h4 id="2、编写集群角色规划文件"><a href="#2、编写集群角色规划文件" class="headerlink" title="2、编写集群角色规划文件"></a>2、编写集群角色规划文件</h4><p>（1）集群分发需要进行角色规划，因此需要编写配置文件为每一个节点配置角色，切换到 myhadoop/tools目录下输入“vim deploy.conf ”编写deploy.conf文件，编写后保存退出。<br><img src="https://raw.githubusercontent.com/HuaJianquan/HadoopImg/master/20200703212656.png" alt="image"><br>第一个逗号前面的字符串为节点hostname,通过识别hostname将文件分发到对应的节点，第二个逗号前面字符串为节点角色，m代表主节点，s代表从节点，第三个逗号前面字符串表示是否全部分发到所有节点，当脚本匹配到all时将文件分发到所有节点。   </p>
 <h4 id="3、编写集群分发脚本"><a href="#3、编写集群分发脚本" class="headerlink" title="3、编写集群分发脚本"></a>3、编写集群分发脚本</h4><p>（1）输入“vim deploy.sh” 编写deploy.sh分发脚本，代码如下 </p>
 <hr>
 <pre><code>#!/bin/bash
@@ -313,7 +313,7 @@ else
     echo &quot;错误：请指定配置文件&quot;
 fi         </code></pre><hr>
 <p>（2）保存退出后测试，这里将hjq01家目录下的test.txt文件分发到从节点家目录下       </p>
-<p><code>sh deploy.sh  ~/test.txt  ~/  s</code><br><img src="https://raw.githubusercontent.com/HuaJianquan/HadoopImg/master/20200703213620.png" alt=""><br><img src="https://raw.githubusercontent.com/HuaJianquan/HadoopImg/master/20200703213639.png" alt=""><br><img src="https://raw.githubusercontent.com/HuaJianquan/HadoopImg/master/20200703213648.png" alt="">   </p>
+<p><code>sh deploy.sh  ~/test.txt  ~/  s</code><br><img src="https://raw.githubusercontent.com/HuaJianquan/HadoopImg/master/20200703213620.png" alt="image"><br><img src="https://raw.githubusercontent.com/HuaJianquan/HadoopImg/master/20200703213639.png" alt="image"><br><img src="https://raw.githubusercontent.com/HuaJianquan/HadoopImg/master/20200703213648.png" alt="image">   </p>
 <h4 id="4、编写远程命令执行脚本"><a href="#4、编写远程命令执行脚本" class="headerlink" title="4、编写远程命令执行脚本"></a>4、编写远程命令执行脚本</h4><p>（1）输入命令”vim run.sh” 编写run.sh脚本，代码如下 </p>
 <hr>
 <pre><code>#!/bin/bash
@@ -345,15 +345,15 @@ else
     echo &quot;错误：请指定配置文件&quot;
 fi</code></pre><hr>
 <p>保存退出。</p>
-<p>（2）输入“sh run.sh  “ls”  all”测试<br><img src="https://raw.githubusercontent.com/HuaJianquan/HadoopImg/master/20200703215219.png" alt="">    </p>
-<p>（3）使用远程命令脚本在所有节点创建 ~/myhadoop/app目录和 ~/myhadoop/data目录<br><code>sh  run.sh  &quot;mkdir  -p  ~/myhadoop/app &quot;  all</code><br><code>sh  run.sh  &quot;mkdir  -p  ~/myhadoop/data &quot; all</code><br><img src="https://raw.githubusercontent.com/HuaJianquan/HadoopImg/master/20200703220246.png" alt=""></p>
+<p>（2）输入“sh run.sh  “ls”  all”测试<br><img src="https://raw.githubusercontent.com/HuaJianquan/HadoopImg/master/20200703215219.png" alt="image">    </p>
+<p>（3）使用远程命令脚本在所有节点创建 ~/myhadoop/app目录和 ~/myhadoop/data目录<br><code>sh  run.sh  &quot;mkdir  -p  ~/myhadoop/app &quot;  all</code><br><code>sh  run.sh  &quot;mkdir  -p  ~/myhadoop/data &quot; all</code><br><img src="https://raw.githubusercontent.com/HuaJianquan/HadoopImg/master/20200703220246.png" alt="image"></p>
 <h3 id="六、安装JDK"><a href="#六、安装JDK" class="headerlink" title="六、安装JDK"></a>六、安装JDK</h3><p> 由于Hadoop是由Java语言编写的，要让Hadoop组件能够运行，必须要JVM的支持，因此需要在集群所有节点安装Jdk。<br> 可以从官网下载  <a href="https://www.oracle.com/java/technologies/javase/javase-jdk8-downloads.html" target="_blank" rel="noopener">jdk-8u251-linux-x64.tar.gz</a>, 下载之后文件会存放在~/Downloads目录下    </p>
-<p>（1）解压jdk 解压到 ~/myhadoop/app目录下<br><code>tar -zxvf ~/Downloads/jdk-8u251-linux-x64.tar.gz -C ~/myhadoop/app/</code><br>（2）将jdk1.8.0_251重命名为jdk<br><code>mv  jdk1.8.0_251  jdk</code><br><img src="https://raw.githubusercontent.com/HuaJianquan/HadoopImg/master/20200703222437.png" alt="">    </p>
-<p>（3）将jdk添加到Path环境变量<br><img src="https://raw.githubusercontent.com/HuaJianquan/HadoopImg/master/20200703222618.png" alt=""><br>保存退出。source 命令使更改生效。</p>
-<p>（4）通过 java -version 命令查看是否安装成功<br><img src="https://raw.githubusercontent.com/HuaJianquan/HadoopImg/master/20200703222831.png" alt="">     </p>
-<p>（5）通过远程分发脚本将jdk和~/.bashrc同步到其它节点<br><img src="https://raw.githubusercontent.com/HuaJianquan/HadoopImg/master/20200703223127.png" alt="">         </p>
-<p><img src="https://raw.githubusercontent.com/HuaJianquan/HadoopImg/master/20200703223155.png" alt="">     </p>
-<p>（6）用远程命令脚本查看其它节点jdk否安装成功<br><code>sh  run.sh  &quot;java  -version&quot;  s</code><br><img src="https://raw.githubusercontent.com/HuaJianquan/HadoopImg/master/20200703223358.png" alt=""><br>至此Hadoop 安装环境已经搭建成功。</p>
+<p>（1）解压jdk 解压到 ~/myhadoop/app目录下<br><code>tar -zxvf ~/Downloads/jdk-8u251-linux-x64.tar.gz -C ~/myhadoop/app/</code><br>（2）将jdk1.8.0_251重命名为jdk<br><code>mv  jdk1.8.0_251  jdk</code><br><img src="https://raw.githubusercontent.com/HuaJianquan/HadoopImg/master/20200703222437.png" alt="image">    </p>
+<p>（3）将jdk添加到Path环境变量<br><img src="https://raw.githubusercontent.com/HuaJianquan/HadoopImg/master/20200703222618.png" alt="image"><br>保存退出。source 命令使更改生效。</p>
+<p>（4）通过 java -version 命令查看是否安装成功<br><img src="https://raw.githubusercontent.com/HuaJianquan/HadoopImg/master/20200703222831.png" alt="image">     </p>
+<p>（5）通过远程分发脚本将jdk和~/.bashrc同步到其它节点<br><img src="https://raw.githubusercontent.com/HuaJianquan/HadoopImg/master/20200703223127.png" alt="image">         </p>
+<p><img src="https://raw.githubusercontent.com/HuaJianquan/HadoopImg/master/20200703223155.png" alt="image">     </p>
+<p>（6）用远程命令脚本查看其它节点jdk否安装成功<br><code>sh  run.sh  &quot;java  -version&quot;  s</code><br><img src="https://raw.githubusercontent.com/HuaJianquan/HadoopImg/master/20200703223358.png" alt="image"><br>至此Hadoop 安装环境已经搭建成功。</p>
 
       
       
